@@ -33,8 +33,6 @@
 }
 
 .timelineItem:nth-child(odd) .timelineContent {
-  left: auto;
-  right: 54%;
   text-align: right;
 }
 

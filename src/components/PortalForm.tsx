@@ -119,7 +119,7 @@ export default function PortalForm() {
                     />
                   </div>
 
-                  <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px" }}>
+                  <div className={styles.formRow}>
                     <div className={styles.formGroup}>
                       <label className={styles.label}>Matrícula *</label>
                       <input
@@ -144,7 +144,7 @@ export default function PortalForm() {
                     </div>
                   </div>
 
-                  <div style={{ display: "grid", gridTemplateColumns: "1.2fr 0.8fr", gap: "16px" }}>
+                  <div className={styles.formRowUnequal}>
                     <div className={styles.formGroup}>
                       <label className={styles.label}>Carrera *</label>
                       <select
@@ -229,7 +229,7 @@ export default function PortalForm() {
                     />
                   </div>
 
-                  <div style={{ display: "grid", gridTemplateColumns: "1.2fr 0.8fr", gap: "16px" }}>
+                  <div className={styles.formRowUnequal}>
                     <div className={styles.formGroup}>
                       <label className={styles.label}>Organización / Departamento / Empresa *</label>
                       <input
