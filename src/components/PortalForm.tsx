@@ -152,9 +152,9 @@ export default function PortalForm() {
                         value={studentData.carrera}
                         onChange={(e) => setStudentData({ ...studentData, carrera: e.target.value })}
                       >
-                        <option value="Sistemas">Ing. en Tecnologías de la Información (Sistemas)</option>
-                        <option value="Mecatrónica">Ing. en Mecatrónica</option>
-                        <option value="Civil">Ing. Civil</option>
+                        <option value="IA">Ing. en Inteligencia Artificial (UTSJR)</option>
+                        <option value="Mecatrónica">Ing. en Mecatrónica (UTSJR)</option>
+                        <option value="Sistemas">Ing. en Tecnologías de la Información</option>
                         <option value="Química">Ing. en Química / Procesos</option>
                         <option value="Mantenimiento">Ing. en Mantenimiento Industrial</option>
                         <option value="Negocios">Lic. en Gestión de Negocios y Proyectos</option>

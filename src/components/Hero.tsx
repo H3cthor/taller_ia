@@ -6,21 +6,20 @@ export default function Hero() {
       <div className={styles.glow} />
       <div className={`container ${styles.content}`}>
         <div className={styles.textSection}>
-          <div className={styles.badge}>#SoyUTSanJuan</div>
+          <div className={styles.badge}>#UTSJR • Innovación Abierta</div>
           <h1 className={styles.title}>
-            Taller de
-            <span className={`text-gradient ${styles.accentText}`}>Inteligencia Artificial</span>
+            Centro de Innovación y <br />
+            <span className={`text-gradient ${styles.accentText}`}>Laboratorio de IA Aplicada</span>
           </h1>
           <p className={styles.subtitle}>
-            Proyectos reales transversales desarrollados por estudiantes para resolver problemas 
-            de la UTSJR, impulsando la innovación académica y formando a los líderes tecnológicos del futuro.
+            <strong>LabIA-UTSJR</strong>: Convergencia estratégica de software inteligente, robótica física, automatización e Industria 4.0 para impulsar las carreras de <strong>Ing. en Inteligencia Artificial</strong> e <strong>Ing. en Mecatrónica</strong> en el Bajío.
           </p>
           <div className={styles.ctas}>
-            <a href="#postularse">
-              <button className={styles.btnPrimary}>Postularse</button>
+            <a href="#servicios">
+              <button className={styles.btnPrimary}>Oferta de Servicios</button>
             </a>
-            <a href="#proyectos">
-              <button className={styles.btnSecondary}>Ver Proyectos</button>
+            <a href="#postularse">
+              <button className={styles.btnSecondary}>Diagnóstico Tecnológico</button>
             </a>
           </div>
         </div>
@@ -30,7 +29,7 @@ export default function Hero() {
             <div className={styles.modelCore}>
               <img
                 src="/mascot_vr.png"
-                alt="Mascota Lobo UTSJR VR"
+                alt="Mascota Lobo UTSJR IA & Mecatrónica"
                 style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "28px" }}
               />
             </div>
@@ -38,7 +37,7 @@ export default function Hero() {
             <div className={styles.tagWrapper}>
               <div className={`${styles.floatingTag} ${styles.tag1}`}>
                 <span className={`${styles.tagDot} ${styles.tagDotBlue}`} />
-                <span>Deep Learning</span>
+                <span>IA & Computer Vision</span>
               </div>
             </div>
 
@@ -46,7 +45,7 @@ export default function Hero() {
             <div className={styles.tagWrapper}>
               <div className={`${styles.floatingTag} ${styles.tag2}`}>
                 <span className={`${styles.tagDot} ${styles.tagDotGreen}`} />
-                <span>IoT & LoRa</span>
+                <span>Robótica & ROS2</span>
               </div>
             </div>
 
@@ -54,7 +53,7 @@ export default function Hero() {
             <div className={styles.tagWrapper}>
               <div className={`${styles.floatingTag} ${styles.tag3}`}>
                 <span className={`${styles.tagDot} ${styles.tagDotPurple}`} />
-                <span>VR Lab (Unreal 5)</span>
+                <span>IIoT & Gemelos Digitales</span>
               </div>
             </div>
           </div>

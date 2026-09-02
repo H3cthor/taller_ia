@@ -1,27 +1,27 @@
 :root {
   /* UTSJR Colors & AI Aesthetics */
-  --primary-rgb: 0, 168, 117; /* UTSJR Green #00a875 */
-  --secondary-rgb: 0, 192, 240; /* UTSJR Cyan #00c0f0 */
-  --accent-rgb: 124, 58, 237; /* AI Purple #7c3aed */
+  --primary-rgb: 0, 104, 55; /* UTSJR Green #006837 */
+  --secondary-rgb: 217, 119, 6; /* UTSJR Gold #d97706 */
+  --accent-rgb: 0, 168, 89; /* UTSJR Light Emerald #00a859 */
   
   --primary: rgb(var(--primary-rgb));
   --secondary: rgb(var(--secondary-rgb));
   --accent: rgb(var(--accent-rgb));
   
-  --background-start: #080a0f;
-  --background-end: #0f121a;
+  --background-start: #080d14;
+  --background-end: #0d1520;
   
-  --card-bg: rgba(17, 22, 32, 0.65);
-  --card-border: rgba(255, 255, 255, 0.08);
-  --card-border-hover: rgba(var(--secondary-rgb), 0.3);
+  --card-bg: rgba(15, 23, 36, 0.75);
+  --card-border: rgba(0, 104, 55, 0.25);
+  --card-border-hover: rgba(217, 119, 6, 0.5);
   
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
   --text-muted: #64748b;
   
-  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  --neon-shadow: 0 0 15px rgba(var(--secondary-rgb), 0.2);
-  --neon-accent-shadow: 0 0 15px rgba(var(--accent-rgb), 0.25);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+  --neon-shadow: 0 0 20px rgba(0, 104, 55, 0.25);
+  --neon-accent-shadow: 0 0 20px rgba(217, 119, 6, 0.3);
   
   --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --font-display: var(--font-outfit), sans-serif;

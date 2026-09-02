@@ -1,35 +1,87 @@
 import styles from "./Equipment.module.css";
 
 export default function Equipment() {
-  const inventory = [
-    { name: "Estación de IA (RTX 4000 Ada 20 GB)", qty: 1, icon: "🖥️" },
-    { name: "Computadora de alto rendimiento (RTX 4070 SUPER)", qty: 1, icon: "💻" },
-    { name: "Meta Quest 3 (Cascos VR)", qty: 2, icon: "🥽" },
-    { name: "Meta Quest 2 (Cascos VR)", qty: 2, icon: "🕶️" },
-    { name: "Kits de Desarrollo NVIDIA Jetson", qty: 2, icon: "🤖" },
-    { name: "Kits de Sensores e IoT (Arduino/ESP32)", qty: 4, icon: "🔌" },
-    { name: "Impresora 3D para Prototipado", qty: 1, icon: "🖨️" },
-    { name: "Proyector de alta definición", qty: 1, icon: "📹" },
-    { name: "Aula equipada con Red de Alta Velocidad", qty: 1, icon: "🏫" },
+  const infrastructureAreas = [
+    {
+      category: "Cómputo e Infraestructura IA",
+      icon: "🖥️",
+      items: [
+        "Workstations de alto rendimiento con GPUs dedicadas (NVIDIA RTX / A-Series)",
+        "Servidor local para entrenamiento intensivo de modelos pesados",
+        "Licencias de software especializado e integración con plataformas Cloud",
+      ],
+    },
+    {
+      category: "Robótica y Mecatrónica",
+      icon: "🤖",
+      items: [
+        "Kits de robótica modular didáctica y avanzada",
+        "Brazos robóticos industriales/colaborativos (Cobots)",
+        "Sensores de variables industriales, PLC y microcontroladores (Arduino, ESP32, Raspberry Pi 5)",
+      ],
+    },
+    {
+      category: "Visión Artificial e IoT",
+      icon: "👁️",
+      items: [
+        "Cámaras de visión industrial estereoscópicas y de alta velocidad",
+        "Kits IIoT con conectividad industrial (MQTT, OPC-UA, Modbus)",
+        "Sistemas de escaneo 3D y sensores LiDAR de profundidad",
+      ],
+    },
+    {
+      category: "Prototipado Físico",
+      icon: "🖨️",
+      items: [
+        "Impresoras 3D de tecnología FDM y Resina SLA de alta precisión",
+        "Cortadora Láser CO2 para materiales sintéticos y madera",
+        "Estaciones de soldadura de precisión y ensamble electrónico",
+      ],
+    },
+    {
+      category: "Espacio Físico / Layout",
+      icon: "🏫",
+      items: [
+        "Zona de Talleres y Co-Working interactivo modular",
+        "Zona de Servidores y Cómputo Pesado aislada",
+        "Área de Pruebas de Robótica, AMRs y Sala de Consultoría Ejecutiva",
+      ],
+    },
   ];
 
   return (
-    <section id="equipamiento" className={styles.equipment}>
+    <section id="infraestructura" className={styles.equipment}>
       <div className="container">
-        <h2 className="section-title">
-          Equipamiento del <span className="text-gradient">Taller</span>
-        </h2>
-        <p className="section-subtitle">
-          Infraestructura de hardware y herramientas físicas necesarias para el desarrollo de
-          aplicaciones de inteligencia artificial y entornos inmersivos de realidad virtual.
-        </p>
+        <div style={{ textAlign: "center", marginBottom: "40px" }}>
+          <span style={{ color: "var(--primary)", fontWeight: "700", fontSize: "0.85rem", textTransform: "uppercase", letterSpacing: "0.1em" }}>
+            Sección 1.4
+          </span>
+          <h2 className="section-title" style={{ marginTop: "4px" }}>
+            Equipamiento e <span className="text-gradient">Infraestructura Requerida</span>
+          </h2>
+          <p className="section-subtitle" style={{ marginBottom: "0" }}>
+            Arquitectura física e instrumental especializado para soportar las actividades de prototipado, investigación y servicios tecnológicos del <strong>LabIA-UTSJR</strong>.
+          </p>
+        </div>
 
-        <div className={styles.grid}>
-          {inventory.map((item, idx) => (
-            <div key={idx} className={`glass glass-hover ${styles.card}`}>
-              <div className={styles.qtyWrapper}>CANT: {item.qty}</div>
-              <span className={styles.icon}>{item.icon}</span>
-              <h3 className={styles.name}>{item.name}</h3>
+        <div className={styles.grid} style={{ gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))" }}>
+          {infrastructureAreas.map((area, idx) => (
+            <div key={idx} className={`glass glass-hover ${styles.card}`} style={{ padding: "28px" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
+                <span className={styles.icon} style={{ fontSize: "2rem" }}>{area.icon}</span>
+                <h3 className={styles.name} style={{ fontSize: "1.2rem", fontWeight: "700", color: "#fff" }}>
+                  {area.category}
+                </h3>
+              </div>
+              
+              <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "10px" }}>
+                {area.items.map((item, itemIdx) => (
+                  <li key={itemIdx} style={{ fontSize: "0.9rem", color: "var(--text-secondary)", lineHeight: "1.5", display: "flex", alignItems: "flex-start", gap: "8px" }}>
+                    <span style={{ color: "var(--accent)", fontWeight: "bold" }}>•</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>

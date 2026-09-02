@@ -9,16 +9,16 @@ export default function Footer() {
         {/* Brand */}
         <div className={styles.brand}>
           <div className={styles.logo}>
-            <span className={styles.logoIcon}>💡</span>
+            <span className={styles.logoIcon}>🤖</span>
             <span>
-              Taller<span className={styles.logoSub}>IA</span>
+              LabIA<span className={styles.logoSub}>-UTSJR</span>
             </span>
           </div>
           <p className={styles.slogan}>
-            Innovación con Impacto Real. Proyectos transversales que solucionan problemas reales en la UTSJR.
+            Centro de Innovación y Laboratorio de Inteligencia Artificial Aplicada. Convergencia de IA, Robótica, Automatización e Industria 4.0 en la UTSJR.
           </p>
           <div className={styles.quote}>
-            &ldquo;La mejor manera de aprender IA es construir IA que ayude a los demás.&rdquo;
+            &ldquo;Impulsando el talento y la competitividad regional a través de la educación práctica y la tecnología.&rdquo;
           </div>
         </div>
 

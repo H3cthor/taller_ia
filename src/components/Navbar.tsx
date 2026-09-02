@@ -27,9 +27,9 @@ export default function Navbar() {
     <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}>
       <div className={`container ${styles.container}`}>
         <a href="#inicio" className={styles.logo} onClick={closeMenu}>
-          <span className={styles.logoIcon}>💡</span>
+          <span className={styles.logoIcon}>🤖</span>
           <span>
-            Taller<span className={styles.logoSub}>IA</span>
+            LabIA<span className={styles.logoSub}>-UTSJR</span>
           </span>
         </a>
 
@@ -41,35 +41,35 @@ export default function Navbar() {
             </a>
           </li>
           <li>
-            <a href="#nosotros" className={styles.navLink}>
-              Modelo
+            <a href="#general" className={styles.navLink}>
+              1. Info General
             </a>
           </li>
           <li>
-            <a href="#proyectos" className={styles.navLink}>
-              Proyectos
+            <a href="#servicios" className={styles.navLink}>
+              2. Servicios
             </a>
           </li>
           <li>
-            <a href="#metodologia" className={styles.navLink}>
-              Metodología
+            <a href="#infraestructura" className={styles.navLink}>
+              3. Equipamiento
             </a>
           </li>
           <li>
-            <a href="#equipamiento" className={styles.navLink}>
-              Equipamiento
+            <a href="#operacion" className={styles.navLink}>
+              4. Operación
             </a>
           </li>
           <li>
             <a href="#postularse" className={styles.navLink}>
-              Postularse
+              Vinculación
             </a>
           </li>
         </ul>
 
         {/* CTA Button */}
         <a href="#postularse">
-          <button className={styles.ctaBtn}>¡Únete al Taller!</button>
+          <button className={styles.ctaBtn}>Servicios e Industria</button>
         </a>
 
         {/* Mobile Menu Hamburger Button */}
@@ -85,28 +85,28 @@ export default function Navbar() {
             </a>
           </li>
           <li>
-            <a href="#nosotros" className={styles.navLink} onClick={closeMenu}>
-              Modelo
+            <a href="#general" className={styles.navLink} onClick={closeMenu}>
+              1. Info General
             </a>
           </li>
           <li>
-            <a href="#proyectos" className={styles.navLink} onClick={closeMenu}>
-              Proyectos
+            <a href="#servicios" className={styles.navLink} onClick={closeMenu}>
+              2. Servicios
             </a>
           </li>
           <li>
-            <a href="#metodologia" className={styles.navLink} onClick={closeMenu}>
-              Metodología
+            <a href="#infraestructura" className={styles.navLink} onClick={closeMenu}>
+              3. Equipamiento
             </a>
           </li>
           <li>
-            <a href="#equipamiento" className={styles.navLink} onClick={closeMenu}>
-              Equipamiento
+            <a href="#operacion" className={styles.navLink} onClick={closeMenu}>
+              4. Operación
             </a>
           </li>
           <li>
             <a href="#postularse" className={styles.navLink} onClick={closeMenu}>
-              Postularse
+              Vinculación
             </a>
           </li>
           <li>
@@ -116,7 +116,7 @@ export default function Navbar() {
               style={{ display: "block", textAlign: "center", marginTop: "10px" }}
               onClick={closeMenu}
             >
-              ¡Únete al Taller!
+              Servicios e Industria
             </a>
           </li>
         </ul>
