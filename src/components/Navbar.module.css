@@ -30,32 +30,31 @@
   align-items: center;
   gap: 10px;
   font-family: var(--font-display);
-  font-size: 1.3rem;
-  font-weight: 800;
+  font-size: 1.15rem;
+  font-weight: 700;
 }
 
 .logoIcon {
   color: var(--secondary);
-  font-weight: 900;
-  position: relative;
-  animation: float 4s infinite ease-in-out;
+  font-weight: 800;
+  display: inline-flex;
 }
 
 .logoSub {
-  color: var(--primary);
-  font-weight: 500;
+  color: var(--secondary);
+  font-weight: 700;
 }
 
 .navLinks {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 28px;
   list-style: none;
 }
 
 .navLink {
   color: var(--text-secondary);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 500;
   transition: var(--transition-smooth);
   position: relative;
@@ -73,7 +72,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  background: var(--secondary);
   transition: var(--transition-smooth);
 }
 
@@ -82,22 +81,21 @@
 }
 
 .ctaBtn {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  background: var(--primary);
   color: #fff;
-  border: none;
-  padding: 10px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 9px 18px;
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: 0.9rem;
-  border-radius: 8px;
+  font-size: 0.88rem;
+  border-radius: 6px;
   cursor: pointer;
-  box-shadow: var(--neon-shadow);
   transition: var(--transition-smooth);
 }
 
 .ctaBtn:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 20px rgba(var(--secondary-rgb), 0.4);
+  background: #007a40;
+  border-color: var(--secondary);
 }
 
 .mobileMenuBtn {

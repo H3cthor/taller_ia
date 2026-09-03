@@ -48,7 +48,6 @@
 
 .card:hover .qtyWrapper {
   background: var(--secondary);
-  color: #fff;
+  color: #000;
   border-color: var(--secondary);
-  box-shadow: var(--neon-shadow);
 }

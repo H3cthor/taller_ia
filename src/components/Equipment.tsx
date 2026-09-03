@@ -53,14 +53,14 @@ export default function Equipment() {
     <section id="infraestructura" className={styles.equipment}>
       <div className="container">
         <div style={{ textAlign: "center", marginBottom: "40px" }}>
-          <span style={{ color: "var(--primary)", fontWeight: "700", fontSize: "0.85rem", textTransform: "uppercase", letterSpacing: "0.1em" }}>
-            Sección 1.4
+          <span style={{ color: "var(--secondary)", fontWeight: "700", fontSize: "0.85rem", textTransform: "uppercase", letterSpacing: "0.08em" }}>
+            Infraestructura y Recursos
           </span>
           <h2 className="section-title" style={{ marginTop: "4px" }}>
-            Equipamiento e <span className="text-gradient">Infraestructura Requerida</span>
+            Equipamiento e <span className="text-gradient">Infraestructura Especializada</span>
           </h2>
           <p className="section-subtitle" style={{ marginBottom: "0" }}>
-            Arquitectura física e instrumental especializado para soportar las actividades de prototipado, investigación y servicios tecnológicos del <strong>LabIA-UTSJR</strong>.
+            Instrumental de vanguardia para soportar las actividades de prototipado, investigación aplicada y vinculación tecnológica del <strong>Centro de Innovación e IA Aplicada</strong>.
           </p>
         </div>
 

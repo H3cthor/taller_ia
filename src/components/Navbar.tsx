@@ -27,9 +27,9 @@ export default function Navbar() {
     <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}>
       <div className={`container ${styles.container}`}>
         <a href="#inicio" className={styles.logo} onClick={closeMenu}>
-          <span className={styles.logoIcon}>🤖</span>
+          <span className={styles.logoIcon}>⚡</span>
           <span>
-            LabIA<span className={styles.logoSub}>-UTSJR</span>
+            Centro de Innovación e <span className={styles.logoSub}>IA Aplicada</span>
           </span>
         </a>
 
@@ -42,22 +42,22 @@ export default function Navbar() {
           </li>
           <li>
             <a href="#general" className={styles.navLink}>
-              1. Info General
+              Info General
             </a>
           </li>
           <li>
             <a href="#servicios" className={styles.navLink}>
-              2. Servicios
+              Servicios
             </a>
           </li>
           <li>
             <a href="#infraestructura" className={styles.navLink}>
-              3. Equipamiento
+              Equipamiento
             </a>
           </li>
           <li>
             <a href="#operacion" className={styles.navLink}>
-              4. Operación
+              Operación
             </a>
           </li>
           <li>
@@ -86,22 +86,22 @@ export default function Navbar() {
           </li>
           <li>
             <a href="#general" className={styles.navLink} onClick={closeMenu}>
-              1. Info General
+              Info General
             </a>
           </li>
           <li>
             <a href="#servicios" className={styles.navLink} onClick={closeMenu}>
-              2. Servicios
+              Servicios
             </a>
           </li>
           <li>
             <a href="#infraestructura" className={styles.navLink} onClick={closeMenu}>
-              3. Equipamiento
+              Equipamiento
             </a>
           </li>
           <li>
             <a href="#operacion" className={styles.navLink} onClick={closeMenu}>
-              4. Operación
+              Operación
             </a>
           </li>
           <li>

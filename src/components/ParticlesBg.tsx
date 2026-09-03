@@ -45,7 +45,7 @@ export default function ParticlesBg() {
       draw(c: CanvasRenderingContext2D) {
         c.beginPath();
         c.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-        c.fillStyle = "rgba(0, 192, 240, 0.4)"; // secondary color cyan
+        c.fillStyle = "rgba(16, 185, 129, 0.35)";
         c.fill();
       }
     }
@@ -74,12 +74,12 @@ export default function ParticlesBg() {
           const dist = Math.sqrt(dx * dx + dy * dy);
 
           if (dist < connectionDistance) {
-            const alpha = (1 - dist / connectionDistance) * 0.15;
+            const alpha = (1 - dist / connectionDistance) * 0.12;
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.strokeStyle = `rgba(0, 168, 117, ${alpha})`; // primary color green
-            ctx.lineWidth = 0.8;
+            ctx.strokeStyle = `rgba(16, 185, 129, ${alpha})`;
+            ctx.lineWidth = 0.7;
             ctx.stroke();
           }
         }

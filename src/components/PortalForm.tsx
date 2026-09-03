@@ -14,9 +14,10 @@ export default function PortalForm() {
     nombre: "",
     matricula: "",
     correo: "",
-    carrera: "Sistemas",
+    carrera: "IA",
     cuatrimestre: "",
     proyectos: [] as string[],
+    otroProyecto: "",
     motivacion: "",
   });
 
@@ -59,9 +60,10 @@ export default function PortalForm() {
       nombre: "",
       matricula: "",
       correo: "",
-      carrera: "Sistemas",
+      carrera: "IA",
       cuatrimestre: "",
       proyectos: [],
+      otroProyecto: "",
       motivacion: "",
     });
     setProjectData({
@@ -81,8 +83,7 @@ export default function PortalForm() {
           Portal de <span className="text-gradient">Vinculación</span>
         </h2>
         <p className="section-subtitle">
-          ¿Eres estudiante y quieres unirte al taller, o eres una empresa/departamento y quieres
-          inscribir una problemática real para ser resuelta? Completa el formulario correspondiente.
+          Abierto a estudiantes de todas las carreras de la UTSJR y a empresas o instituciones que busquen proponer retos reales de desarrollo tecnológico.
         </p>
 
         <div className={`glass ${styles.formBox}`}>
@@ -100,7 +101,7 @@ export default function PortalForm() {
                   className={`${styles.tabBtn} ${formType === "proyecto" ? styles.tabBtnActive : ""}`}
                   onClick={() => setFormType("proyecto")}
                 >
-                  Proponer Proyecto Real
+                  Proponer Reto / Proyecto
                 </button>
               </div>
 
@@ -154,11 +155,12 @@ export default function PortalForm() {
                       >
                         <option value="IA">Ing. en Inteligencia Artificial (UTSJR)</option>
                         <option value="Mecatrónica">Ing. en Mecatrónica (UTSJR)</option>
-                        <option value="Sistemas">Ing. en Tecnologías de la Información</option>
-                        <option value="Química">Ing. en Química / Procesos</option>
+                        <option value="TI">Ing. en Tecnologías de la Información</option>
+                        <option value="Química">Ing. en Química / Procesos Industriales</option>
                         <option value="Mantenimiento">Ing. en Mantenimiento Industrial</option>
                         <option value="Negocios">Lic. en Gestión de Negocios y Proyectos</option>
-                        <option value="Otra">Otra Carrera</option>
+                        <option value="Energías">Ing. en Energías Renovables</option>
+                        <option value="Otra">Otra Carrera / Programa Académico</option>
                       </select>
                     </div>
                     <div className={styles.formGroup}>
@@ -177,14 +179,15 @@ export default function PortalForm() {
                   </div>
 
                   <div className={styles.formGroup}>
-                    <label className={styles.label}>Proyectos de Interés (Selecciona al menos uno)</label>
+                    <label className={styles.label}>Proyectos de Interés (Selecciona al menos uno o escribe tu propuesta)</label>
                     <div className={styles.checkboxGroup}>
                       {[
+                        { id: "orion", name: "ORION (Chatbot / Robótica)" },
                         { id: "intelipark", name: "InteliPark (Estacionamiento)" },
                         { id: "bioaccess", name: "BIOACCESS (Seguridad)" },
-                        { id: "orion", name: "ORION (Chatbot / Robótica)" },
                         { id: "strupret", name: "STRUPRET IA (Civil)" },
                         { id: "sill", name: "SILL-UTSJR (VR + IA)" },
+                        { id: "otro", name: "Otro (Escribir propuesta)" },
                       ].map((p) => (
                         <label key={p.id} className={styles.checkboxLabel}>
                           <input
@@ -197,15 +200,32 @@ export default function PortalForm() {
                         </label>
                       ))}
                     </div>
+
+                    {/* Input field for Otro Proyecto */}
+                    {studentData.proyectos.includes("otro") && (
+                      <div style={{ marginTop: "12px" }}>
+                        <label className={styles.label} style={{ fontSize: "0.85rem", color: "var(--secondary)" }}>
+                          Escribe el nombre o tema de tu proyecto / idea: *
+                        </label>
+                        <input
+                          type="text"
+                          className={styles.input}
+                          required
+                          placeholder="Ej. Control de calidad para Química, Monitoreo IoT para Mantenimiento, etc."
+                          value={studentData.otroProyecto}
+                          onChange={(e) => setStudentData({ ...studentData, otroProyecto: e.target.value })}
+                        />
+                      </div>
+                    )}
                   </div>
 
                   <div className={styles.formGroup}>
-                    <label className={styles.label}>¿Por qué quieres unirte al Taller de IA? *</label>
+                    <label className={styles.label}>¿Por qué quieres integrarte al Centro de Innovación e IA Aplicada? *</label>
                     <textarea
                       className={styles.textarea}
                       rows={4}
                       required
-                      placeholder="Cuéntanos brevemente qué te motiva, qué habilidades esperas desarrollar y qué puedes aportar al taller..."
+                      placeholder="Cuéntanos tus motivaciones, qué competencias esperas desarrollar y qué puedes aportar al equipo multidisciplinario..."
                       value={studentData.motivacion}
                       onChange={(e) => setStudentData({ ...studentData, motivacion: e.target.value })}
                     />
@@ -301,8 +321,8 @@ export default function PortalForm() {
               <div className={styles.successIcon}>✓</div>
               <h3 className={styles.successTitle}>¡Registro Recibido!</h3>
               <p className={styles.successText}>
-                Tu información ha sido registrada exitosamente en las bases de datos del Taller de IA. 
-                Los administradores revisarán tu solicitud y se pondrán en contacto contigo a través del correo proporcionado.
+                Tu información ha sido registrada exitosamente en el sistema del Centro de Innovación e IA Aplicada. 
+                El equipo de coordinación revisará tu solicitud y se pondrá en contacto contigo a través del correo proporcionado.
               </p>
               <button className={styles.resetBtn} onClick={handleReset}>
                 Volver al Formulario

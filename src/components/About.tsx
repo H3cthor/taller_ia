@@ -14,11 +14,11 @@ export default function About() {
       icon: "🎓",
       badge: "Formación de Excelencia",
       description:
-        "Reforzar las competencias prácticas de los estudiantes de Ingeniería en Inteligencia Artificial e Ingeniería en Mecatrónica de la UTSJR mediante proyectos integradores multidisciplinarios en entornos reales de prueba y producción.",
+        "Fortalecer las competencias prácticas e interdisciplinarias de los estudiantes de la UTSJR. Con base en Tecnologías de la Información (IA) y Mecatrónica, promoviendo la integración transversal con carreras como Química, Mantenimiento Industrial y Gestión de Negocios en proyectos de impacto real.",
       bullets: [
-        "Desarrollo de prototipos funcionales integrando software inteligente y hardware físico.",
-        "Generación de residencias profesionales, becas y estancias de investigación.",
-        "Publicaciones científicas, patentes y portafolios altamente empleables.",
+        "Desarrollo de prototipos funcionales integrando software inteligente, sensórica y hardware físico.",
+        "Generación de residencias profesionales, estancias de investigación y semilleros de talento.",
+        "Publicaciones técnicas, proyectos integradores y portafolios altamente competitivos.",
       ],
     },
     social: {
@@ -26,7 +26,7 @@ export default function About() {
       icon: "🌱",
       badge: "Vinculación y Sociedad",
       description:
-        "Ofrecer programas de alfabetización tecnológica, talleres STEM y cursos adaptados de IA y Robótica para niños, jóvenes y adultos de San Juan del Río y la región del Bajío.",
+        "Ofrecer programas de alfabetización tecnológica, talleres STEM y cursos adaptados de IA y Robótica para niños, jóvenes y profesionistas de San Juan del Río y la región del Bajío.",
       bullets: [
         "Semilleros STEM e IA Kids para edades tempranas (8 a 17 años).",
         "Reducción de la brecha digital y democratización de la inteligencia artificial.",
@@ -38,20 +38,20 @@ export default function About() {
       icon: "💼",
       badge: "Sostenibilidad & Industria",
       description:
-        "Generar ingresos propios institucionales a través de servicios de consultoría técnica especializada, desarrollo de software a medida, automatización e instrucción ejecutiva in-company para el parque industrial local.",
+        "Generar valor institucional mediante consultoría técnica especializada, desarrollo de soluciones tecnológicas a medida, automatización y capacitación ejecutiva para el parque industrial.",
       bullets: [
-        "Plataforma de servicios tecnológicos UTSJR habilitada para facturación.",
-        "Mantenimiento predictivo, visión artificial e inspección industrial de calidad.",
-        "Reinversión directa en actualización de infraestructura y equipamiento de laboratorio.",
+        "Plataforma de vinculación tecnológica y servicios especializados UTSJR.",
+        "Mantenimiento predictivo, visión artificial e inspección industrial de procesos.",
+        "Reinversión continua en infraestructura, equipamiento y becas estudiantiles.",
       ],
     },
   };
 
   const stats = [
-    { number: "2028", label: "Visión: Laboratorio Líder en Transferencia Tecnológica en el Bajío" },
-    { number: "2", label: "Carreras Clave: Ing. en IA e Ing. en Mecatrónica" },
+    { number: "2028", label: "Visión: Centro Líder en Transferencia Tecnológica en el Bajío" },
+    { number: "Transversal", label: "Abierto a todas las carreras con base en TI y Mecatrónica" },
     { number: "3", label: "Ejes de Impacto: Académico, Social e Industrial" },
-    { number: "100%", label: "Prototipado e Integración Hardware-Software" },
+    { number: "100%", label: "Proyectos Aplicados e Integración Hardware-Software" },
   ];
 
   return (
@@ -60,16 +60,16 @@ export default function About() {
         
         {/* Section Header */}
         <div style={{ textAlign: "center", marginBottom: "40px" }}>
-          <span style={{ color: "var(--primary)", fontWeight: "700", fontSize: "0.85rem", textTransform: "uppercase", letterSpacing: "0.1em" }}>
-            Sección 1
+          <span style={{ color: "var(--secondary)", fontWeight: "700", fontSize: "0.85rem", textTransform: "uppercase", letterSpacing: "0.08em" }}>
+            Información Institucional
           </span>
           <h2 className="section-title" style={{ marginTop: "4px" }}>
-            Información General y <span className="text-gradient">Alineación Académica</span>
+            Alineación Académica y <span className="text-gradient">Propósito Estratégico</span>
           </h2>
           <p className="section-subtitle" style={{ marginBottom: "0" }}>
-            <strong>"Centro de Innovación y Laboratorio de Inteligencia Artificial Aplicada (LabIA-UTSJR)"</strong>
+            <strong>Centro de Innovación e IA Aplicada</strong>
             <br />
-            Enfoque: IA, Robótica, Automatización e Industria 4.0
+            Enfoque: Inteligencia Artificial, Automatización, Robótica e Innovación Transversal
           </p>
         </div>
 
@@ -79,17 +79,17 @@ export default function About() {
             <img src="/mascot_ai.png" alt="Mascota Lobo UTSJR IA" className={styles.mascotImg} />
           </div>
           <div className={styles.introText}>
-            <div style={{ display: "inline-block", background: "rgba(0, 104, 55, 0.15)", color: "var(--accent)", padding: "4px 12px", borderRadius: "12px", fontSize: "0.8rem", fontWeight: "700", marginBottom: "12px" }}>
-              1.2 Justificación Estratégica
+            <div style={{ display: "inline-block", background: "rgba(16, 185, 129, 0.12)", color: "var(--secondary)", padding: "4px 12px", borderRadius: "6px", fontSize: "0.8rem", fontWeight: "700", marginBottom: "12px", alignSelf: "flex-start" }}>
+              Justificación Estratégica
             </div>
-            <h3 style={{ fontSize: "1.6rem", fontWeight: "800", color: "#fff", marginBottom: "12px" }}>
-              Fusión de Hardware Físico y Software Inteligente
+            <h3 style={{ fontSize: "1.5rem", fontWeight: "800", color: "#fff", marginBottom: "12px" }}>
+              Innovación Transversal: Fusión de Hardware, Software y Procesos
             </h3>
             <p className={styles.introParagraph}>
-              La Universidad Tecnológica de San Juan del Río cuenta con las carreras de <strong>Ingeniería en Inteligencia Artificial</strong> e <strong>Ingeniería en Mecatrónica</strong>. La creación del <strong>LabIA-UTSJR</strong> responde a la oportunidad de fusionar el software inteligente con la robótica física y la automatización industrial, posicionando a la universidad como un referente tecnológico en San Juan del Río y el estado de Querétaro.
+              El <strong>Centro de Innovación e IA Aplicada</strong> nace con una sólida base técnica en las áreas de <strong>Tecnologías de la Información (Inteligencia Artificial)</strong> e <strong>Ingeniería en Mecatrónica</strong>, operando como un espacio <strong>abierto y transversal para todas las carreras</strong> de la Universidad Tecnológica de San Juan del Río.
             </p>
             <p className={styles.introParagraph}>
-              El laboratorio no solo funciona como espacio de prácticas universitarias, sino como un <strong>nodo de innovación abierta y servicios tecnológicos</strong> para el sector industrial, PyMEs, instituciones educativas y el público en general.
+              Esta estructura multidisciplinaria permite abordar problemáticas complejas conectando la robótica y el software inteligente con la química de procesos, el mantenimiento industrial y la gestión estratégica de negocios, posicionando a la UTSJR como un nodo de innovación y servicios tecnológicos de alto impacto para la región.
             </p>
           </div>
         </div>
@@ -99,22 +99,22 @@ export default function About() {
           <div className={`glass glass-hover ${styles.modelCard}`}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
               <span className={styles.cardIcon}>🎯</span>
-              <span style={{ fontSize: "0.8rem", fontWeight: "800", color: "var(--accent)", textTransform: "uppercase" }}>Declaración</span>
+              <span style={{ fontSize: "0.8rem", fontWeight: "700", color: "var(--secondary)", textTransform: "uppercase" }}>Declaración</span>
             </div>
             <h3 className={styles.cardTitle}>Misión</h3>
             <p className={styles.cardDescription}>
-              Desarrollar talento, prototipos y soluciones tecnológicas basadas en Inteligencia Artificial y Mecatrónica, impulsando la educación práctica y la competitividad de las empresas regionales.
+              Desarrollar talento multidisciplinario, prototipos y soluciones tecnológicas aplicadas con Inteligencia Artificial y tecnologías emergentes, impulsando la educación práctica y la competitividad productiva regional.
             </p>
           </div>
 
           <div className={`glass glass-hover ${styles.modelCard}`}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
               <span className={styles.cardIcon}>🚀</span>
-              <span style={{ fontSize: "0.8rem", fontWeight: "800", color: "var(--secondary)", textTransform: "uppercase" }}>Meta 2028</span>
+              <span style={{ fontSize: "0.8rem", fontWeight: "700", color: "var(--accent)", textTransform: "uppercase" }}>Meta 2028</span>
             </div>
             <h3 className={styles.cardTitle}>Visión</h3>
             <p className={styles.cardDescription}>
-              Ser el laboratorio universitario líder en la región del Bajío en transferencia de tecnología de IA, automatización inteligente e Industria 4.0 para el año 2028.
+              Consolidarse como el centro universitario líder en la región del Bajío en transferencia tecnológica de IA aplicada, automatización y soluciones interdisciplinarias para el año 2028.
             </p>
           </div>
         </div>

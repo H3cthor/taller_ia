@@ -9,13 +9,13 @@ export default function Footer() {
         {/* Brand */}
         <div className={styles.brand}>
           <div className={styles.logo}>
-            <span className={styles.logoIcon}>🤖</span>
+            <span className={styles.logoIcon}>⚡</span>
             <span>
-              LabIA<span className={styles.logoSub}>-UTSJR</span>
+              Centro de Innovación e <span className={styles.logoSub}>IA Aplicada</span>
             </span>
           </div>
           <p className={styles.slogan}>
-            Centro de Innovación y Laboratorio de Inteligencia Artificial Aplicada. Convergencia de IA, Robótica, Automatización e Industria 4.0 en la UTSJR.
+            Convergencia de software inteligente, robótica, automatización e innovación transversal para todas las carreras de la Universidad Tecnológica de San Juan del Río.
           </p>
           <div className={styles.quote}>
             &ldquo;Impulsando el talento y la competitividad regional a través de la educación práctica y la tecnología.&rdquo;
@@ -32,23 +32,23 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="#nosotros" className={styles.link}>
-                Modelo Aprender Haciendo
+              <a href="#general" className={styles.link}>
+                Info General
               </a>
             </li>
             <li>
-              <a href="#proyectos" className={styles.link}>
-                Proyectos Estratégicos
+              <a href="#servicios" className={styles.link}>
+                Servicios Tecnológicos
               </a>
             </li>
             <li>
-              <a href="#metodologia" className={styles.link}>
-                Metodología de Trabajo
+              <a href="#infraestructura" className={styles.link}>
+                Equipamiento
               </a>
             </li>
             <li>
-              <a href="#equipamiento" className={styles.link}>
-                Equipamiento de Laboratorio
+              <a href="#operacion" className={styles.link}>
+                Ciclo Operativo
               </a>
             </li>
             <li>
@@ -85,7 +85,7 @@ export default function Footer() {
           &copy; {currentYear} Universidad Tecnológica de San Juan del Río. Todos los derechos reservados.
         </span>
         <span>
-          Desarrollado con ❤️ para el Taller de Inteligencia Artificial de la UTSJR.
+          Centro de Innovación e IA Aplicada - UTSJR
         </span>
       </div>
     </footer>

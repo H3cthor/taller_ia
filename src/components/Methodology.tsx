@@ -4,48 +4,48 @@ export default function Methodology() {
   const studentFlowSteps = [
     {
       step: "01",
-      role: "Empresa / Cliente",
+      role: "Empresa / Sector Productivo",
       title: "Plantea Necesidad o Reto",
-      desc: "La empresa o área universitaria expone su problemática técnica o necesidad de automatización/IA ante la Coordinación del LabIA-UTSJR.",
+      desc: "La empresa, institución u organización expone su problemática técnica o necesidad de innovación ante la Dirección del Centro.",
       icon: "🏢",
     },
     {
       step: "02",
-      role: "Coordinación LabIA",
-      title: "Asigna Proyecto Integrador / Residencia",
-      desc: "Se conforma el equipo de trabajo asignando estudiantes de Ing. en Inteligencia Artificial e Ing. en Mecatrónica guiados por Docentes Investigadores.",
+      role: "Coordinación del Centro",
+      title: "Conformación Multidisciplinaria",
+      desc: "Se integra un equipo de trabajo transversal con estudiantes y docentes de diversas carreras de la UTSJR según los requerimientos del reto.",
       icon: "📋",
     },
     {
       step: "03",
-      role: "Estudiantes & Docentes",
-      title: "Desarrolla Prototipo en LabIA",
-      desc: "Uso intensivo de las estaciones GPU, impresoras 3D, brazos robóticos y kits IIoT para construir y entrenar la solución funcional.",
+      role: "Estudiantes & Asesores",
+      title: "Desarrollo y Prototipado Integral",
+      desc: "Uso intensivo de la infraestructura del centro (cómputo GPU, robótica, sensores, fabricación) para construir la solución validada.",
       icon: "⚙️",
     },
     {
       step: "04",
-      role: "LabIA a Empresa",
-      title: "Entrega Demostrador / Solución",
-      desc: "Pruebas de validación en planta o entorno real y entrega formal del prototipo o software a medida al cliente.",
+      role: "Centro a Empresa",
+      title: "Entrega de la Solución",
+      desc: "Pruebas de validación en entorno real y entrega formal del prototipo, sistema o consultoría tecnológica aplicada.",
       icon: "🚀",
     },
     {
       step: "05",
-      role: "Retribución & Impacto",
-      title: "Pago por Servicio & Becas Estudiantiles",
-      desc: "La empresa liquida el servicio tecnológico a la UTSJR; los fondos se destinan al mantenimiento del laboratorio y otorgamiento de becas/experiencia a los alumnos.",
+      role: "Impacto & Sostenibilidad",
+      title: "Retribución y Experiencia Real",
+      desc: "La contraprestación económica fortalece el fondo de equipamiento del centro y genera becas e inserción laboral de alto nivel para los estudiantes.",
       icon: "🎓",
     },
   ];
 
   const businessSteps = [
-    { num: "1", title: "Recepción y Diagnóstico", text: "Diagnóstico técnico preliminar por Vinculación UTSJR y Coordinador LabIA." },
-    { num: "2", title: "Cotización y Propuesta", text: "Alcances, entregables, cronograma y costos ajustados a tabuladores de la UTSJR." },
-    { num: "3", title: "Asignación de Equipo", text: "1 Docente Investigador Líder + Becarios de Ing. en IA e Ing. en Mecatrónica." },
-    { num: "4", title: "Desarrollo y Prototipado", text: "Entrenamiento de modelos, ensamble de tarjetas y calibración de algoritmos." },
-    { num: "5", title: "Pruebas y Despliegue", text: "Validación de la solución en la planta del cliente o entrega terminada." },
-    { num: "6", title: "Cierre y Facturación", text: "Facturación institucional e ingreso de fondos para reinversión en el laboratorio." },
+    { num: "1", title: "Recepción y Diagnóstico", text: "Diagnóstico técnico preliminar por el área de Vinculación y el equipo especializado del Centro." },
+    { num: "2", title: "Cotización y Propuesta", text: "Definición de alcances, entregables, cronograma y costos alineados a los tabuladores de la UTSJR." },
+    { num: "3", title: "Asignación de Equipo", text: "1 Docente Investigador Líder + Estudiantes de las carreras afines al proyecto." },
+    { num: "4", title: "Desarrollo y Prototipado", text: "Diseño, programación, ensamblaje, calibración y validación de la solución tecnológica." },
+    { num: "5", title: "Pruebas y Despliegue", text: "Validación de desempeño en las instalaciones del cliente o entrega terminada del desarrollo." },
+    { num: "6", title: "Cierre y Facturación", text: "Facturación institucional formal y canalización de fondos para reinversión continua." },
   ];
 
   return (
@@ -54,27 +54,27 @@ export default function Methodology() {
         
         {/* Section Header */}
         <div style={{ textAlign: "center", marginBottom: "40px" }}>
-          <span style={{ color: "var(--primary)", fontWeight: "700", fontSize: "0.85rem", textTransform: "uppercase", letterSpacing: "0.1em" }}>
-            Sección 3
+          <span style={{ color: "var(--secondary)", fontWeight: "700", fontSize: "0.85rem", textTransform: "uppercase", letterSpacing: "0.08em" }}>
+            Metodología y Procesos
           </span>
           <h2 className="section-title" style={{ marginTop: "4px" }}>
-            Procedimientos y <span className="text-gradient">Procesos Operativos</span>
+            Ciclo Operativo y <span className="text-gradient">Vinculación</span>
           </h2>
           <p className="section-subtitle" style={{ marginBottom: "0" }}>
-            Modelos de vinculación universitaria y protocolos de atención a clientes industriales del <strong>LabIA-UTSJR</strong>.
+            Modelo ágil de vinculación abierta entre la comunidad universitaria y el ecosistema empresarial en el <strong>Centro de Innovación e IA Aplicada</strong>.
           </p>
         </div>
 
-        {/* 3.1 Flujo de Vinculación Estudiantil */}
-        <div className="glass" style={{ padding: "32px", borderRadius: "20px", marginBottom: "48px" }}>
-          <span style={{ color: "var(--accent)", fontSize: "0.8rem", fontWeight: "700", textTransform: "uppercase", letterSpacing: "0.08em" }}>
-            3.1 Flujo de Vinculación
+        {/* Flujo de Vinculación Abierta */}
+        <div className="glass" style={{ padding: "32px", borderRadius: "12px", marginBottom: "48px" }}>
+          <span style={{ color: "var(--secondary)", fontSize: "0.8rem", fontWeight: "700", textTransform: "uppercase", letterSpacing: "0.08em" }}>
+            Ciclo de Innovación
           </span>
-          <h3 style={{ fontSize: "1.6rem", fontWeight: "800", color: "#fff", marginBottom: "8px" }}>
-            Ciclo Operativo Estudiantil (IA & Mecatrónica)
+          <h3 style={{ fontSize: "1.5rem", fontWeight: "800", color: "#fff", marginBottom: "8px" }}>
+            Ciclo Operativo Multidisciplinario
           </h3>
           <p style={{ color: "var(--text-secondary)", fontSize: "0.95rem", marginBottom: "28px" }}>
-            Los estudiantes operan como el motor de innovación del laboratorio a través de Residencias Profesionales, Servicio Social y Proyectos Integradores reales.
+            Los estudiantes de todas las carreras operan como el motor de innovación a través de Residencias Profesionales, Servicio Social y Proyectos Integradores de impacto tangible.
           </p>
 
           <div className={styles.timeline}>
@@ -94,63 +94,31 @@ export default function Methodology() {
           </div>
         </div>
 
-        {/* 3.2 Atención a Empresas */}
-        <div style={{ marginBottom: "48px" }}>
+        {/* Atención a Empresas */}
+        <div>
           <div style={{ textAlign: "center", marginBottom: "24px" }}>
             <span style={{ color: "var(--secondary)", fontSize: "0.8rem", fontWeight: "700", textTransform: "uppercase", letterSpacing: "0.08em" }}>
-              3.2 Servicios Tecnológicos
+              Servicios Tecnológicos
             </span>
-            <h3 style={{ fontSize: "1.6rem", fontWeight: "800", color: "#fff" }}>
-              Proceso de Atención a Empresas Externas
+            <h3 style={{ fontSize: "1.5rem", fontWeight: "800", color: "#fff" }}>
+              Proceso de Atención y Desarrollo para Empresas
             </h3>
           </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "16px" }}>
             {businessSteps.map((s, idx) => (
-              <div key={idx} className="glass" style={{ padding: "20px", borderRadius: "14px", border: "1px solid rgba(255, 255, 255, 0.08)" }}>
+              <div key={idx} className="glass" style={{ padding: "20px", borderRadius: "10px", border: "1px solid rgba(255, 255, 255, 0.08)" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "8px" }}>
-                  <span style={{ background: "var(--primary)", color: "#fff", width: "28px", height: "28px", borderRadius: "8px", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: "bold", fontSize: "0.85rem" }}>
+                  <span style={{ background: "var(--primary)", color: "#fff", width: "26px", height: "26px", borderRadius: "6px", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: "bold", fontSize: "0.82rem" }}>
                     {s.num}
                   </span>
-                  <h4 style={{ fontSize: "1rem", fontWeight: "700", color: "#fff" }}>{s.title}</h4>
+                  <h4 style={{ fontSize: "0.98rem", fontWeight: "700", color: "#fff" }}>{s.title}</h4>
                 </div>
                 <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)", lineHeight: "1.5" }}>
                   {s.text}
                 </p>
               </div>
             ))}
-          </div>
-        </div>
-
-        {/* 3.3 Gestión Operativa del Espacio */}
-        <div className="glass" style={{ padding: "28px", borderRadius: "20px" }}>
-          <span style={{ color: "var(--primary)", fontSize: "0.8rem", fontWeight: "700", textTransform: "uppercase", letterSpacing: "0.08em" }}>
-            3.3 Gestión Operativa del Espacio
-          </span>
-          <h3 style={{ fontSize: "1.4rem", fontWeight: "800", color: "#fff", marginBottom: "16px" }}>
-            Administración y Normativa Interna
-          </h3>
-
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "20px" }}>
-            <div style={{ background: "rgba(255, 255, 255, 0.03)", padding: "20px", borderRadius: "12px", border: "1px solid rgba(255, 255, 255, 0.06)" }}>
-              <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "8px" }}>
-                <span style={{ fontSize: "1.4rem" }}>🌐</span>
-                <h4 style={{ fontSize: "1.05rem", fontWeight: "700", color: "#fff" }}>Sistema de Reservas Web</h4>
-              </div>
-              <p style={{ fontSize: "0.88rem", color: "var(--text-secondary)", lineHeight: "1.5" }}>
-                Plataforma interna para la gestión de turnos y reservación de equipos pesados (Workstations GPU, brazos robóticos e impresoras 3D) por parte de docentes y estudiantes.
-              </p>
-            </div>
-
-            <div style={{ background: "rgba(255, 255, 255, 0.03)", padding: "20px", borderRadius: "12px", border: "1px solid rgba(255, 255, 255, 0.06)" }}>
-              <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "8px" }}>
-                <span style={{ fontSize: "1.4rem" }}>🛡️</span>
-                <h4 style={{ fontSize: "1.05rem", fontWeight: "700", color: "#fff" }}>Reglamento de Seguridad y Uso</h4>
-              </div>
-              <p style={{ fontSize: "0.88rem", color: "var(--text-secondary)", lineHeight: "1.5" }}>
-                Normas de bioseguridad y protección en el uso de estaciones de soldadura, cortadoras láser CO2, circuitos de alta potencia y manejo seguro de componentes electrónicos.
-              </p>
-            </div>
           </div>
         </div>
 

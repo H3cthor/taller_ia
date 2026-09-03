@@ -96,34 +96,34 @@ export default function ProjectsHub() {
 
   const projects: Project[] = [
     {
+      id: "orion",
+      title: "ORION",
+      area: "Atención",
+      problem: "Servicios escolares y áreas de atención reciben consultas repetitivas continuas que saturan al personal en ventanilla.",
+      solution: "Asistente físico (robot móvil de servicio y orientación) acoplado a un motor conversacional NLP con síntesis de voz y navegación autónoma.",
+      impact: "Atención automatizada 24/7 y reducción sustancial de carga administrativa en ventanillas universitarias.",
+      skills: ["Procesamiento de Lenguaje Natural (NLP)", "Integración Hardware-Software", "Robótica Móvil", "APIs de Voz"],
+      tech: ["Python", "Rasa NLU", "ROS2", "Arduino", "TTS / STT"],
+    },
+    {
       id: "intelipark",
       title: "InteliPark",
       area: "Estacionamiento",
-      problem: "Los estudiantes pierden tiempo buscando lugar de estacionamiento en horas pico y el uso de gafetes físicos genera demoras y riesgo de fraudes.",
-      solution: "Cámara inteligente con reconocimiento automático de placas (OCR) conectada a sensores IoT mediante protocolo LoRa y aplicación móvil en tiempo real.",
+      problem: "Los estudiantes y docentes pierden tiempo buscando lugar de estacionamiento en horas pico y el acceso físico genera demoras.",
+      solution: "Cámara inteligente con reconocimiento automático de placas (OCR) conectada a sensores IoT mediante protocolo LoRa y aplicación en tiempo real.",
       impact: "Reducción del 70% en el tiempo de búsqueda y control de accesos ágil sin filas en la entrada del campus.",
-      skills: ["Visión por Computadora", "Internet de las Cosas (IoT)", "Desarrollo Móvil", "Comunicaciones LoRa WAN"],
-      tech: ["Python", "OpenCV", "Raspberry Pi", "LoRa Gateway", "Flutter"],
+      skills: ["Visión por Computadora", "Internet de las Cosas (IoT)", "Desarrollo de Software", "Comunicaciones LoRa WAN"],
+      tech: ["Python", "OpenCV", "Raspberry Pi", "LoRa Gateway", "React Native"],
     },
     {
       id: "bioaccess",
       title: "BIOACCESS",
       area: "Seguridad",
-      problem: "Las credenciales físicas se pierden o dañan, y el registro manual en accesos a laboratorios especiales es lento e ineficiente.",
+      problem: "Las credenciales físicas se deterioran y el registro manual en accesos a laboratorios especiales es lento e inseguro.",
       solution: "Sistema de control de acceso por reconocimiento facial con Red Neuronal Convolucional (CNN) optimizada para hardware local.",
       impact: "Verificación biométrica segura en menos de 500ms con precisión comprobada del 95.3%.",
       skills: ["Deep Learning", "Optimización de Modelos", "Edge Computing", "Ciberseguridad Biométrica"],
       tech: ["Python", "PyTorch", "NVIDIA Jetson Nano", "SQLite", "OpenCV"],
-    },
-    {
-      id: "orion",
-      title: "ORION",
-      area: "Atención",
-      problem: "Servicios escolares recibe consultas repetitivas continuas que saturan al personal en ventanilla.",
-      solution: "Asistente físico (robot de servicio escolar) acoplado a un motor conversacional NLP con síntesis de voz.",
-      impact: "Atención automatizada 24/7 y reducción sustancial de carga administrativa.",
-      skills: ["NLP", "Integración Hardware-Software", "Robótica Móvil", "APIs de Voz"],
-      tech: ["Python", "Rasa NLU", "ROS (Robot Operating System)", "Arduino", "TTS APIs"],
     },
     {
       id: "strupret-ia",
@@ -148,7 +148,7 @@ export default function ProjectsHub() {
     },
   ];
 
-  const filters = ["Todos", "Estacionamiento", "Seguridad", "Atención", "Civil", "Educación"];
+  const filters = ["Todos", "Atención", "Estacionamiento", "Seguridad", "Civil", "Educación"];
 
   const filteredProjects =
     filter === "Todos" ? projects : projects.filter((p) => p.area === filter);
@@ -159,14 +159,14 @@ export default function ProjectsHub() {
         
         {/* Section Header */}
         <div style={{ textAlign: "center", marginBottom: "40px" }}>
-          <span style={{ color: "var(--primary)", fontWeight: "700", fontSize: "0.85rem", textTransform: "uppercase", letterSpacing: "0.1em" }}>
-            Sección 2
+          <span style={{ color: "var(--secondary)", fontWeight: "700", fontSize: "0.85rem", textTransform: "uppercase", letterSpacing: "0.08em" }}>
+            Servicios Tecnológicos
           </span>
           <h2 className="section-title" style={{ marginTop: "4px" }}>
-            Oferta de Servicios <span className="text-gradient">LabIA-UTSJR</span>
+            Oferta de Servicios y <span className="text-gradient">Capacidades</span>
           </h2>
           <p className="section-subtitle" style={{ marginBottom: "0" }}>
-            Portafolio diversificado articulado en tres ejes fundamentales de desarrollo y transferencia tecnológica.
+            Portafolio articulado en tres ejes fundamentales de formación, desarrollo tecnológico e innovación transversal.
           </p>
         </div>
 
@@ -240,7 +240,7 @@ export default function ProjectsHub() {
             Prototipos y Demostradores <span className="text-gradient">Integrados</span>
           </h3>
           <p className="section-subtitle" style={{ marginBottom: "24px" }}>
-            Ejemplos de proyectos reales desarrollados por estudiantes de Ing. en IA e Ing. en Mecatrónica.
+            Soluciones aplicadas desarrolladas por equipos multidisciplinarios de estudiantes y docentes de la UTSJR.
           </p>
 
           {/* Filter Buttons */}

@@ -3,16 +3,15 @@ import styles from "./Hero.module.css";
 export default function Hero() {
   return (
     <header id="inicio" className={styles.hero}>
-      <div className={styles.glow} />
       <div className={`container ${styles.content}`}>
         <div className={styles.textSection}>
-          <div className={styles.badge}>#UTSJR • Innovación Abierta</div>
+          <div className={styles.badge}>UTSJR • Innovación Transversal</div>
           <h1 className={styles.title}>
-            Centro de Innovación y <br />
-            <span className={`text-gradient ${styles.accentText}`}>Laboratorio de IA Aplicada</span>
+            Centro de Innovación e <br />
+            <span className={styles.accentText}>IA Aplicada</span>
           </h1>
           <p className={styles.subtitle}>
-            <strong>LabIA-UTSJR</strong>: Convergencia estratégica de software inteligente, robótica física, automatización e Industria 4.0 para impulsar las carreras de <strong>Ing. en Inteligencia Artificial</strong> e <strong>Ing. en Mecatrónica</strong> en el Bajío.
+            Espacio de convergencia tecnológica entre software inteligente, robótica y automatización. Con base en <strong>Tecnologías de la Información (IA)</strong> y <strong>Mecatrónica</strong>, abierto e integrado de forma <strong>transversal a todas las carreras</strong> de la UTSJR y el sector productivo del Bajío.
           </p>
           <div className={styles.ctas}>
             <a href="#servicios">

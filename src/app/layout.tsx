@@ -15,9 +15,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Taller de Inteligencia Artificial | UTSJR",
-  description: "Innovación con Impacto Real. Proyectos transversales de Inteligencia Artificial y tecnologías emergentes para resolver problemas reales en la Universidad Tecnológica de San Juan del Río.",
-  keywords: ["IA", "Inteligencia Artificial", "UTSJR", "Proyectos Universitarios", "Realidad Virtual", "Innovación", "San Juan del Río"],
+  title: "Centro de Innovación e IA Aplicada | UTSJR",
+  description: "Innovación con Impacto Real. Proyectos transversales de Inteligencia Artificial, Robótica, Automatización y tecnologías emergentes para todas las carreras de la Universidad Tecnológica de San Juan del Río.",
+  keywords: ["IA", "Inteligencia Artificial", "UTSJR", "Centro de Innovación", "Proyectos Universitarios", "Mecatrónica", "TI", "San Juan del Río"],
 };
 
 export default function RootLayout({
